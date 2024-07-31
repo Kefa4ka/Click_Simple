@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clicker Game</h1>
+        <button id="clicker">Click me!</button>
+        <p>Score: <span id="score">0</span></p>
+        <p>Clicks per second: <span id="clicks-per-second">1</span></p>
+
+        <div class="shop">
+            <div class="shop-tabs">
+                <button class="tab-btn" data-category="upgrades">Upgrades</button>
+                <button class="tab-btn" data-category="items">Items</button>
+                <button class="tab-btn" data-category="bonuses">Bonuses</button>
+            </div>
+
+            <div id="shop-upgrades" class="shop-items">
+                <h2>Upgrades</h2>
+                <p>Upgrade level: <span id="upgrade-level">0</span></p>
+                <p>Upgrade cost: <span id="upgrade-cost">10</span></p>
+                <button id="upgrade">Buy Upgrade</button>
+
+                <p>Auto-clicker level: <span id="auto-clicker-level">0</span></p>
+                <p>Auto-clicker cost: <span id="auto-clicker-cost">50</span></p>
+                <button id="buy-auto-clicker">Buy Auto-clicker</button>
+
+                <p>Multiplier level: <span id="multiplier-level">0</span></p>
+                <p>Multiplier cost: <span id="multiplier-cost">100</span></p>
+                <button id="buy-multiplier">Buy Multiplier</button>
+
+                <p>Click power level: <span id="click-power-level">0</span></p>
+                <p>Click power cost: <span id="click-power-cost">20</span></p>
+                <button id="buy-click-power">Buy Click Power</button>
+            </div>
+
+            <div id="shop-items" class="shop-items">
+                <h2>Items</h2>
+                <p>Magic wand level: <span id="magic-power-level">0</span></p>
+                <p>Magic wand cost: <span id="magic-wand-cost">400</span></p>
+                <button id="buy-magic-wand">Buy Magic Wand</button>
+
+                <p>Special items: <span id="special-items">0</span></p>
+                <p>Special item cost: <span id="special-item-cost">500</span></p>
+                <button id="buy-special-item">Buy Special Item</button>
+
+                <p>Magic potion cost: <span id="magic-potion-cost">250</span></p>
+                <button id="buy-magic-potion">Buy Magic Potion</button>
+
+                <p>New item cost: <span id="new-item-cost">600</span></p>
+                <button id="buy-new-item">Buy New Item</button>
+            </div>
+
+            <div id="shop-bonuses" class="shop-items">
+                <h2>Bonuses</h2>
+                <p>Double score cost: <span id="double-score-cost">200</span></p>
+                <button id="buy-double-score">Buy Double Score</button>
+
+                <p>Auto-clicker speed cost: <span id="auto-clicker-speed-cost">300</span></p>
+                <button id="buy-auto-clicker-speed">Buy Auto-clicker Speed</button>
+
+                <p>Click speed cost: <span id="click-speed-cost">150</span></p>
+                <button id="buy-click-speed">Buy Click Speed</button>
+
+                <p>Achievement upgrade cost: <span id="achievement-upgrade-cost">1000</span></p>
+                <button id="buy-achievement-upgrade">Buy Achievement Upgrade</button>
+            </div>
+        </div>
+
+        <div class="achievements">
+            <h2>Achievements</h2>
+            <p id="achievement-msg">No achievements yet.</p>
+        </div>
+
+        <div class="missions">
+            <h2>Missions</h2>
+            <p id="mission-msg">No missions yet.</p>
+        </div>
+
+        <button id="reset">Reset Progress</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
